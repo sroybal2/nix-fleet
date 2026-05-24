@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    home-manager = {
+      url = "github:nix-community/home-manager/release-25.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nvf = {
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
@@ -37,6 +41,7 @@
   outputs = {
     nixpkgs,
     nixpkgs-unstable,
+    home-manager,
     nvf,
     zen-browser,
     nix-flatpak,
@@ -74,6 +79,7 @@
           ./modules/shared
           nix-flatpak.nixosModules.nix-flatpak
           silentSDDM.nixosModules.default
+          home-manager.nixosModules.home-manager
         ];
         extraSpecialArgs = {
           inherit nvfFN;
@@ -95,6 +101,7 @@
           ./modules/shared
           nix-flatpak.nixosModules.nix-flatpak
           silentSDDM.nixosModules.default
+          home-manager.nixosModules.home-manager
         ];
         extraSpecialArgs = {
           inherit nvfFN;

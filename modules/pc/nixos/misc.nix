@@ -19,7 +19,7 @@
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
-    time.timeZone = "America/New_York";
+    time.timeZone = "America/Los_Angeles";
 
     services.tailscale.enable = true;
     programs.steam.enable = true;
