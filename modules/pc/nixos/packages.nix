@@ -6,6 +6,7 @@
 }: let
   stable = with pkgs; [
     wget
+    wtype
     git
     rclone
     ripgrep
