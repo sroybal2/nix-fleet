@@ -7,6 +7,7 @@
   stable = with pkgs; [
     wget
     wtype
+    obsidian
     git
     rclone
     ripgrep
