@@ -75,7 +75,28 @@
           nix-flatpak.nixosModules.nix-flatpak
           silentSDDM.nixosModules.default
         ];
-        extraSpecialArgs = { 
+        extraSpecialArgs = {
+          inherit nvfFN;
+          zenPkg = zen-browser.packages."x86_64-linux".default;
+        };
+      };
+
+      nixos = mkHost {
+        system = "x86_64-linux";
+        overlays = [
+            (import ./overlays/flameshot.nix)
+            (import ./overlays/qutebrowser.nix)
+            (import ./overlays/steam.nix)
+            (import ./overlays/unstable.nix { inherit nixpkgs-unstable; } )
+        ];
+        modules = [
+          ./modules/pc/nixos
+          ./modules/pc/shared
+          ./modules/shared
+          nix-flatpak.nixosModules.nix-flatpak
+          silentSDDM.nixosModules.default
+        ];
+        extraSpecialArgs = {
           inherit nvfFN;
           zenPkg = zen-browser.packages."x86_64-linux".default;
         };
