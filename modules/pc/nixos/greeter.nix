@@ -1,20 +1,11 @@
-_:
+{ pkgs, ... }:
 {
-
-    services.displayManager.sddm = {
+    services.greetd = {
         enable = true;
-        wayland.enable = true;
-    };
-
-    programs.silentSDDM = {
-        enable = true;
-        theme = "default";
         settings = {
-            Background = { Mode = "cover"; };
-            General = { GreeterEnvironment = "QT_SCALE_FACTOR=2,QT_AUTO_SCREEN_SCALE_FACTOR=0"; };
-            Wayland = {
-                PrimaryDisplay = "eDP-1";
-                EnabledHiDPI = true;
+            default_session = {
+                command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --remember-session --asterisks --cmd niri-session";
+                user = "greeter";
             };
         };
     };

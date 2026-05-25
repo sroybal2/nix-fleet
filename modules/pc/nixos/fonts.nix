@@ -12,4 +12,10 @@
     noto-fonts-cjk-sans
     corefonts
   ];
+
+  console = {
+    font = "ter-v32n";
+    packages = [ pkgs.terminus_font ];
+    earlySetup = true;
+  };
 }

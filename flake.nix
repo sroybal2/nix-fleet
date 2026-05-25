@@ -12,10 +12,6 @@
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
-    silentSDDM = {
-      url="github:uiriansan/SilentSDDM";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
@@ -45,7 +41,6 @@
     nvf,
     zen-browser,
     nix-flatpak,
-    silentSDDM,
     nixflix,
     sops-nix,
     disko,
@@ -78,7 +73,6 @@
           ./modules/pc/shared
           ./modules/shared
           nix-flatpak.nixosModules.nix-flatpak
-          silentSDDM.nixosModules.default
           home-manager.nixosModules.home-manager
         ];
         extraSpecialArgs = {
@@ -100,7 +94,6 @@
           ./modules/pc/shared
           ./modules/shared
           nix-flatpak.nixosModules.nix-flatpak
-          silentSDDM.nixosModules.default
           home-manager.nixosModules.home-manager
         ];
         extraSpecialArgs = {
