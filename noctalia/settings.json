@@ -238,7 +238,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "content",
+        "generationMethod": "muted",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -456,18 +456,18 @@
     },
     "location": {
         "analogClockInCalendar": false,
-        "autoLocate": false,
+        "autoLocate": true,
         "firstDayOfWeek": -1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
-        "name": "Stafford",
+        "name": "Oroville",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
         "use12hourFormat": false,
-        "useFahrenheit": false,
+        "useFahrenheit": true,
         "weatherEnabled": true,
-        "weatherShowEffects": true,
+        "weatherShowEffects": false,
         "weatherTaliaMascotAlways": false
     },
     "network": {
@@ -527,7 +527,7 @@
     },
     "osd": {
         "autoHideMs": 1300,
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.52,
         "enabled": true,
         "enabledTypes": [
             0,
@@ -536,6 +536,7 @@
         ],
         "location": "top_right",
         "monitors": [
+            "eDP-1"
         ],
         "overlayLayer": true
     },
@@ -663,9 +664,9 @@
     },
     "ui": {
         "boxBorderEnabled": false,
-        "fontDefault": "Sans Serif",
+        "fontDefault": "JetBrainsMono Nerd Font",
         "fontDefaultScale": 1,
-        "fontFixed": "monospace",
+        "fontFixed": "JetBrainsMono Nerd Font Mono",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.8700000000000001,
         "panelsAttachedToBar": true,
@@ -710,13 +711,13 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": false,
+        "useWallhaven": true,
         "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
-        "wallhavenQuery": "",
+        "wallhavenQuery": "gothic ",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",
         "wallhavenResolutionMode": "atleast",
