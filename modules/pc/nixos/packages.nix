@@ -33,6 +33,7 @@
     tree
     wireshark
     btop
+    mc
     zathura
     dig
     prismlauncher

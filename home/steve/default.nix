@@ -2,6 +2,8 @@
 let
   fleet = "/home/steve/nix-fleet";
 in {
+  imports = [ ./helix.nix ];
+
   home.username = "steve";
   home.homeDirectory = "/home/steve";
   home.stateVersion = "25.11";
