@@ -216,6 +216,29 @@
 
     extraLuaFiles = [ ../nvf/filetypes.lua ];
 
+    keymaps = [
+      {
+        key = "<leader>jn";
+        mode = "n";
+        lua = true;
+        action = ''function() require("jopvim.telescope").joplin_notes() end'';
+        desc = "Joplin: search notes";
+      }
+      {
+        key = "<leader>jf";
+        mode = "n";
+        lua = true;
+        action = ''function() require("jopvim.telescope").joplin_folders() end'';
+        desc = "Joplin: pick folder / new note";
+      }
+      {
+        key = "<leader>ju";
+        mode = "n";
+        action = "<cmd>JopvimUpdateIndex<CR>";
+        desc = "Joplin: update index";
+      }
+    ];
+
     extraPlugins.jopvim = {
       package = pkgs.vimUtils.buildVimPlugin {
         pname = "jopvim.nvim";
