@@ -60,6 +60,11 @@
       languages = ["en"];
     };
 
+    notes = {
+      neorg.enable = true;
+      obsidian.enable = true;
+    };
+
     clipboard.enable = true;
     clipboard.providers.wl-copy.enable = true;
 
