@@ -13,4 +13,7 @@ in {
 
   xdg.configFile."noctalia".source =
     config.lib.file.mkOutOfStoreSymlink "${fleet}/noctalia";
+
+  xdg.configFile."shikane/config.toml".source =
+    config.lib.file.mkOutOfStoreSymlink "${fleet}/shikane/config.toml";
 }

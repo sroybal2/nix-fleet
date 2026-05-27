@@ -1,0 +1,26 @@
+[[profile]]
+name = "docked"
+
+[[profile.output]]
+search = "DP-2"
+enable = true
+mode = "1920x1080@60"
+position = "0,0"
+scale = 1.0
+
+[[profile.output]]
+search = "eDP-1"
+enable = true
+mode = "3840x2160@60"
+position = "1920,0"
+scale = 2.0
+
+[[profile]]
+name = "undocked"
+
+[[profile.output]]
+search = "eDP-1"
+enable = true
+mode = "3840x2160@60"
+position = "0,0"
+scale = 2.0

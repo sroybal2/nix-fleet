@@ -45,6 +45,7 @@
     pavucontrol
     brightnessctl
     kanshi
+    shikane
     vesktop
     ffmpeg
     xdg-utils
