@@ -62,7 +62,15 @@
 
     notes = {
       neorg.enable = true;
-      obsidian.enable = true;
+      obsidian = {
+        enable = true;
+        setupOpts.workspaces = [
+          {
+            name = "nerdfiles";
+            path = "~/Documents/nerdfiles";
+          }
+        ];
+      };
     };
 
     clipboard.enable = true;
