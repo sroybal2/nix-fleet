@@ -252,6 +252,7 @@
         dependencies = with pkgs.vimPlugins; [ telescope-nvim plenary-nvim ];
       };
       setup = ''
+        vim.fn.mkdir(vim.fn.stdpath('cache') .. '/jop', 'p')
         require('jopvim').setup({
           token_path = vim.fn.expand('~/.config/joplin/token'),
         })
