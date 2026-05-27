@@ -353,6 +353,7 @@
         "launcherPosition": "end",
         "launcherUseDistroLogo": false,
         "monitors": [
+            "DP-2"
         ],
         "onlySameOutput": true,
         "pinnedApps": [

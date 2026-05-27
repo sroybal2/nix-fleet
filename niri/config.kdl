@@ -109,15 +109,15 @@ input {
     position x=1280 y=0
 }
 
-output "eDP-1" {
-    mode "3840x2160@59.997"
-    scale 2
-    position x=0 y=0
-}
-
 output "DP-2" {
     mode "1920x1080@60"
     scale 1
+    position x=0 y=0
+}
+
+output "eDP-1" {
+    mode "3840x2160@59.997"
+    scale 2
     position x=1920 y=0
 }
 

@@ -3,17 +3,17 @@ name = "docked"
 
 [[profile.output]]
 enable = true
-search = ["m=0x143B", "s=", "v=Sharp Corporation"]
-mode = "3840x2160@59.997Hz"
+search = ["m=VE248", "s=L7LMQS005768", "v=Ancor Communications Inc"]
+mode = "1920x1080@60Hz"
 position = "0,0"
-scale = 2.0
+scale = 1.0
 
 [[profile.output]]
 enable = true
-search = ["m=VE248", "s=L7LMQS005768", "v=Ancor Communications Inc"]
-mode = "1920x1080@60Hz"
+search = ["m=0x143B", "s=", "v=Sharp Corporation"]
+mode = "3840x2160@59.997Hz"
 position = "1920,0"
-scale = 1.0
+scale = 2.0
 
 [[profile]]
 name = "undocked"
