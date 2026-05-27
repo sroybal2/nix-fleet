@@ -2,16 +2,16 @@
 name = "docked"
 
 [[profile.output]]
-search = "DP-2"
 enable = true
-mode = "1920x1080@60"
+search = ["m=VE248", "s=L7LMQS005768", "v=Ancor Communications Inc"]
+mode = "1920x1080@60Hz"
 position = "0,0"
 scale = 1.0
 
 [[profile.output]]
-search = "eDP-1"
 enable = true
-mode = "3840x2160@60"
+search = ["m=0x143B", "s=", "v=Sharp Corporation"]
+mode = "3840x2160@59.997Hz"
 position = "1920,0"
 scale = 2.0
 
@@ -19,8 +19,8 @@ scale = 2.0
 name = "undocked"
 
 [[profile.output]]
-search = "eDP-1"
 enable = true
-mode = "3840x2160@60"
+search = ["m=0x143B", "s=", "v=Sharp Corporation"]
+mode = "3840x2160@59.997Hz"
 position = "0,0"
 scale = 2.0
