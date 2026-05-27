@@ -8,6 +8,7 @@
     wget
     wtype
     obsidian
+    joplin-desktop
     git
     rclone
     ripgrep

@@ -207,5 +207,24 @@
     lazy.enable = false;
 
     extraLuaFiles = [ ../nvf/filetypes.lua ];
+
+    extraPlugins.jopvim = {
+      package = pkgs.vimUtils.buildVimPlugin {
+        pname = "jopvim.nvim";
+        version = "2026-05-03";
+        src = pkgs.fetchFromGitHub {
+          owner = "ZwodahS";
+          repo = "jopvim.nvim";
+          rev = "98de275a3676b94b51158644f53d9c10e252a4c2";
+          hash = "sha256-rizgA2PmTRcAj1bv8Ub7kzvvbKDbczmv8PPt4XDI9nA=";
+        };
+        dependencies = with pkgs.vimPlugins; [ telescope-nvim plenary-nvim ];
+      };
+      setup = ''
+        require('jopvim').setup({
+          token_path = vim.fn.expand('~/.config/joplin/token'),
+        })
+      '';
+    };
   };
 }
