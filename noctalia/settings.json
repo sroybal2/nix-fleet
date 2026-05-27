@@ -473,9 +473,9 @@
     "network": {
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
-        "bluetoothHideUnnamedDevices": false,
+        "bluetoothHideUnnamedDevices": true,
         "bluetoothRssiPollIntervalMs": 10000,
-        "bluetoothRssiPollingEnabled": false,
+        "bluetoothRssiPollingEnabled": true,
         "disableDiscoverability": false,
         "networkPanelView": "ethernet",
         "wifiDetailsViewMode": "grid"
